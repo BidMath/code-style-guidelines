@@ -1,0 +1,62 @@
+# inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'spec/fixtures/**/*'
+
+Style/FileName: # exclude these filenames without camel case
+  Exclude:
+    - 'Vagrantfile'
+    - 'Gemfile'
+    - 'Rakefile'
+
+Style/SignalException:
+    EnforcedStyle: semantic
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic
+  FunctionalMethods:
+    - before
+    - after
+    - around
+    - let
+    - let!
+    - subject
+    - watch
+    - its
+    - trait
+    - sequence
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/LineEndConcatenation:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  EnforcedStyle: require_parentheses
+
+Metrics/LineLength:
+  Severity: refactor
+
+Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
