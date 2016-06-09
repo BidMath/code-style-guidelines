@@ -60,3 +60,7 @@ Style/SymbolArray:
 
 Style/WordArray:
   Enabled: false
+
+# We have deep modules so we don't want to waste the space.
+Style/ClassAndModuleChildren:
+  Enabled: false
