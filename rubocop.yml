@@ -64,3 +64,15 @@ Style/WordArray:
 # We have deep modules so we don't want to waste the space.
 Style/ClassAndModuleChildren:
   Enabled: false
+
+
+# Overwrite new defaults for rspec
+# https://github.com/bbatsov/rubocop/issues/3664#issuecomment-275860483
+#
+Metrics/ModuleLength:
+Exclude:
+  - "**/*_spec.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"
