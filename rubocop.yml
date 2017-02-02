@@ -70,8 +70,8 @@ Style/ClassAndModuleChildren:
 # https://github.com/bbatsov/rubocop/issues/3664#issuecomment-275860483
 #
 Metrics/ModuleLength:
-Exclude:
-  - "**/*_spec.rb"
+  Exclude:
+    - "**/*_spec.rb"
 
 Metrics/BlockLength:
   Exclude:
