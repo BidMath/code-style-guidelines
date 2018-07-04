@@ -14,10 +14,7 @@ Style/Naming: # exclude these filenames without camel case
 Style/SignalException:
     EnforcedStyle: semantic
 
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-  
-Style/TrailingCommaInHashLiteral:
+Style/TrailingCommaInLiteral:
   EnforcedStyleForMultiline: consistent_comma
 
 Style/BracesAroundHashParameters:
