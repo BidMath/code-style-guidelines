@@ -5,7 +5,7 @@ AllCops:
     - 'vendor/**/*'
     - 'spec/fixtures/**/*'
 
-Style/Naming: # exclude these filenames without camel case
+Style/FileName: # exclude these filenames without camel case
   Exclude:
     - 'Vagrantfile'
     - 'Gemfile'
